@@ -34,7 +34,7 @@ class RAGConfig:
     data_dir: str = "data"
     use_flash_attention: bool = False
     device: str = "cuda" if torch.cuda.is_available() else "cpu"
-    anthropic_api_key: Optional[str] = "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"  # Add your Anthropic API key here
+    anthropic_api_key: Optional[str] = ""  # Add your Anthropic API key here
     cache_dir: str = CACHE_DIR
     force_download: bool = False  # Set to True to force re-download
 
@@ -421,7 +421,7 @@ def main():
     """Main execution function"""
     # Configuration
     config = RAGConfig(
-        anthropic_api_key= "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",  # Set your API key as environment variable
+        anthropic_api_key= "",  # Set your API key as environment variable
         use_flash_attention=False  # Set to True if you have flash attention installed
     )
     

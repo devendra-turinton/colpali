@@ -52,7 +52,7 @@ class RAGConfig:
     faiss_index_dir: str = "faiss_indexes"
     use_flash_attention: bool = False
     device: str = "cuda" if torch.cuda.is_available() else "cpu"
-    anthropic_api_key: Optional[str] = "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"
+    anthropic_api_key: Optional[str] = ""
     cache_dir: str = CACHE_DIR
     force_download: bool = False
     use_faiss: bool = True
@@ -1026,7 +1026,7 @@ class ProductionMultimodalRAG:
 def main_production():
     """Production usage example"""
     config = RAGConfig(
-        anthropic_api_key="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",  # Replace with your actual API key
+        anthropic_api_key="",  # Replace with your actual API key
         use_faiss=True,
         use_gpu_faiss=torch.cuda.is_available(),
         batch_size=50,
