@@ -48,3 +48,17 @@ ipython>=8.26.0
 # Python 3.12.7 specific compatibility fixes
 setuptools>=70.0.0
 wheel>=0.44.0
+colpali-engine>=0.2.2
+
+# byaldi>=0.0.1
+# accelerate>=0.24.0
+# transformers>=4.37.0
+# torch>=2.2.0,<2.6
+# torchvision>=0.16.0,<0.21.0
+# pdf2image>=1.16.0
+# pillow>=10.0.0
+# anthropic>=0.24.0
+# huggingface-hub>=0.19.0
+# jsonschema>=4.18,<4.22
+# pymupdf>=1.23.0
+
